@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Portal Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffec43;
+    }
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+    .left-section {
+      flex: 2;
+      background: #175e1e;
+      color: #fff600;
+      padding: 60px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .left-section h1 {
+      color: #fff600;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .left-section b {
+      color: #fff;
+    }
+    .left-section ul {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+    .left-section li {
+      margin-bottom: 18px;
+      color: #fff;
+      font-size: 1.1rem;
+    }
+    .right-section {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .login-card {
+      background: #eaffd5;
+      border-radius: 20px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.16);
+      padding: 32px 40px;
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .login-card img {
+      width: 85px;
+      margin-bottom: 25px;
+    }
+    .login-input {
+      width: 100%;
+      margin-bottom: 18px;
+      padding: 10px;
+      font-size: 1rem;
+      border: 2px solid #d2ec86;
+      border-radius: 7px;
+      box-sizing: border-box;
+      outline: none;
+      transition: border .2s;
+    }
+    .login-input:focus {
+      border: 2px solid #68b350;
+    }
+    .forgot-link {
+      align-self: flex-end;
+      font-size: 0.95rem;
+      color: #608b32;
+      text-decoration: none;
+      margin-bottom: 18px;
+    }
+    .login-button {
+      background: #4ac455;
+      color: #fff;
+      border: none;
+      border-radius: 7px;
+      padding: 12px 0;
+      font-size: 1.1rem;
+      width: 100%;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background .2s;
+    }
+    .login-button:hover {
+      background: #39a541;
+    }
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+      .left-section {
+        padding: 32px 18px;
+        text-align: center;
+      }
+      .right-section {
+        padding: 40px 0;
+      }
+      .login-card {
+        width: 90vw;
+        padding: 28px 7vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <h1>Welcome to Student demo customized self practice Portal </h1>
+      <b>It is dedicated coding and learning platform.</b>
+      <ul>
+        <li> In our portal we can only the practice the question which is already feeded.</li>
+        <li> But this customized session creates seperate practice session for the student who wish to  practice their own set of  the question which is not present in portal..</li>
+        <li>In this platform the student can give their own set of question and the testcase that has to passed in all case.</li>
+        <li>So instead of practicing in other platform student can themself create their own question in our portal.</li>
+      </ul>
+    </div>
+    <div class="right-section">
+      <div class="login-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHS9jwkLdHCKo90fsu-rfxluXN37prOQtY6g&s" alt="College Logo"/>
+        
+     
+  <!-- Form starts here -->
+<form action="login1.php" method="post">
+  <input class="login-input" type="text" name="username" placeholder="Username" required />
+  <input class="login-input" type="password" name="password" placeholder="Password" required />
+  <button class="login-button" type="submit">Login</button>
+</form>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
